@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register</title>
+  </head>
+  <style>
+    #form {
+      width: 400px;
+      margin: 20vh auto 0 auto;
+      /* background-color: skyblue; */
+      background-image: linear-gradient(
+        to left,
+        rgb(241, 33, 172),
+        rgb(104, 71, 252)
+      );
+      border-radius: 5px;
+      padding: 30px;
+    }
+    h1 {
+      text-align: center;
+      color: rgb(7, 7, 7);
+    }
+    #form button {
+      background-color: gray;
+      color: white;
+      cursor: pointer;
+      width: 100%;
+      padding: 10px 0;
+    }
+    #form button:hover {
+      background-color: lightcoral;
+    }
+    .input-group {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 15px;
+    }
+    .input-group input {
+      border-radius: 5px;
+      font-size: 15px;
+      margin-top: 5px;
+      padding: 10px;
+    }
+    .input-group input:focus {
+      outline: 0;
+    }
+    .input-group .error {
+      color: red;
+      margin-top: 5px;
+    }
+    .input-group .success input {
+      border-color: green;
+    }
+    .input-group .error input {
+      border-color: red;
+    }
+  </style>
+  <body>
+    <div class="container">
+      <form action="" id="form">
+        <h1>Register</h1>
+        <div class="input-group">
+          <label for="username">UserName </label>
+          <input type="text" id="username" name="username" />
+          <div class="error"></div>
+        </div>
+
+        <div class="input-group">
+          <label for="Email">Email </label>
+          <input type="text" id="email" name="email" />
+          <div class="error"></div>
+        </div>
+        <div class="input-group">
+          <label for="password">Password </label>
+          <input type="text" id="password" name="password" />
+          <div class="error"></div>
+        </div>
+        <div class="input-group">
+          <label for="cpassword">Confirm Password </label>
+          <input type="text" id="cpassword" name="cpassword" />
+          <div class="error"></div>
+        </div>
+        <div>
+          <button type="submit">Register</button>
+        </div>
+      </form>
+    </div>
+    <script src="reg.js"></script>
+  </body>
+</html>
